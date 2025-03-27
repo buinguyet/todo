@@ -1,0 +1,87 @@
+.card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s, box-shadow 0.2s;
+    position: relative;
+    overflow: hidden;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.15);
+}
+
+.card h3 {
+    margin-top: 0;
+    color: #333;
+    font-size: 1.3rem;
+    word-break: break-word;
+}
+
+.card p {
+    color: #666;
+    flex-grow: 1;
+    margin-bottom: 15px;
+    word-break: break-word;
+}
+
+.card-status {
+    margin: 15px 0;
+}
+
+.status {
+    font-size: 0.85rem;
+    padding: 4px 10px;
+    border-radius: 12px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.completed {
+    background-color: #e6f7e6;
+    color: #2e7d32;
+}
+
+.pending {
+    background-color: #fff8e1;
+    color: #f57c00;
+}
+
+.card-actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+
+.card-button {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: background-color 0.2s;
+}
+
+.edit-button {
+    background-color: #e3f2fd;
+    color: #0277bd;
+}
+
+.edit-button:hover {
+    background-color: #bbdefb;
+}
+
+.delete-button {
+    background-color: #ffebee;
+    color: #c62828;
+}
+
+.delete-button:hover {
+    background-color: #ffcdd2;
+}
